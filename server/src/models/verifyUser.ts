@@ -1,7 +1,7 @@
 import { pool } from '../database/dbConnect'
-import { User } from '../types/types';
+import { Password } from '../types/types';
 
-export const verifyUser = async (email: string): Promise<User> => {
+export const verifyUser = async (email: string): Promise<Password> => {
     const text = 'SELECT password FROM usuarios WHERE email = $1';
     const values = [email];
     const {rows} = await pool.query(text, values);

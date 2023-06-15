@@ -1,7 +1,7 @@
 import { pool } from '../database/dbConnect'
-import { User } from '../types/types';
+import { UserWithoutPassword } from '../types/types';
 
-export const getUserInfo = async (email: string): Promise<User> => {
+export const getUserInfo = async (email: string): Promise<UserWithoutPassword> => {
     const text = 'SELECT email, rol, lenguaje FROM usuarios WHERE email = $1';
     const values = [email];
     const {rows} = await pool.query(text, values);

@@ -10,7 +10,7 @@ const createUser = async (req: Request, res: Response) => {
     try {
         const { email, passwordHashed, rol, lenguaje } = req.body;
         const user = await generateUser(email, passwordHashed, rol, lenguaje);
-        return res.json(user);
+        return res.json({ok: true, user});
     } catch (error: any) {
         return res.status(500).json({ok: false, error: error.message});
     }
