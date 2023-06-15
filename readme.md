@@ -1,8 +1,8 @@
 # Soft Jobs App
-- The Soft Jobs App is a web application designed to support junior developers in finding short and simple jobs to gain work experience and improve their opportunities. It provides a platform for developers to register, authenticate, and search for available jobs. The app also allows employers to post job opportunities and review applications from developers.
+The Soft Jobs App is a web application designed to support junior developers in finding short and simple jobs to gain work experience and improve their opportunities. It provides a platform for developers to register, authenticate, and search for available jobs. The app also allows employers to post job opportunities and review applications from developers.
 
 ## Features
-- User Registration: Developers can register on the platform by providing their email address and password. This allows them to access additional features and functionalities.
+User Registration: Developers can register on the platform by providing their email address and password. This allows them to access additional features and functionalities.
 
 1. User Authentication: Registered users can log in to the app using their email and password. This enables them to access their profile and interact with the platform.
 
@@ -11,7 +11,7 @@
 3. Authentication and Authorization: Soft Jobs uses JSON Web Tokens (JWT) for user authentication and authorization. Users receive a token upon successful login, which is used to authenticate subsequent requests.
 
 ## Technologies Used
-- The Soft Jobs App is built using the following technologies:
+The Soft Jobs App is built using the following technologies:
 
 * Node.js: A JavaScript runtime environment for executing server-side code.
 * Express.js: A fast and minimalist web application framework for Node.js.
@@ -31,7 +31,7 @@ git clone https://github.com/jtca94/softjobsJWTapp.git
 2. Install the dependencies:
 
 ```bash
-cd softjobs-app
+cd client / server
 npm install
 ```
 3. Set up the PostgreSQL database and configure the connection details in a .env file:
@@ -53,17 +53,17 @@ npm run start
 Access the application at http://localhost:4000 in your web browser.
 
 ## API Endpoints
-- The Soft Jobs App exposes the following API endpoints:
+The Soft Jobs App exposes the following API endpoints:
 
 * POST /usuarios: Registers a new user.
 * POST /login: Authenticates a user and generates a JWT token.
 * GET /usuarios: Retrieves user data if authenticated.
 
 ## Error Handling
-- The Soft Jobs App incorporates error handling to provide meaningful error responses. The application includes an error handling middleware that catches any errors thrown during request processing and returns appropriate responses to the client.
+The Soft Jobs App incorporates error handling to provide meaningful error responses. The application includes an error handling middleware that catches any errors thrown during request processing and returns appropriate responses to the client.
 
 ## Dependencies
-- The Soft Jobs App utilizes the following major dependencies:
+The Soft Jobs App utilizes the following major dependencies:
 
 * express
 * pg
